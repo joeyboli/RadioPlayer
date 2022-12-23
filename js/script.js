@@ -544,6 +544,3 @@ function decimalToInt(vol) {
     return vol * 100;
 }
 
-
-
-
