@@ -2,6 +2,7 @@
 
 const RADIO_NAME = 'Game! Radio 1';
 
+var API_SERVICE = 'deezer';
 
 var zenoid = 'cfhkm5fs1uhvv'
 
@@ -94,7 +95,7 @@ function Page() {
             $historicDiv[n].classList.add('animated');
             $historicDiv[n].classList.add('slideInRight');
         }
-        xhttp.open('GET', 'https://api.streamafrica.net/search.php?query=' + info.artist + ' ' + info.song);
+        xhttp.open('GET', 'https://api.streamafrica.net/search.php?query=' + info.artist + ' ' + info.song + '&service='+API_SERVICE);
         xhttp.send();
 
         setTimeout(function () {
@@ -173,7 +174,7 @@ function Page() {
                 }
             }
         }
-        xhttp.open('GET', 'https://api.streamafrica.net/search.php?query=' + artist + ' ' + song);
+        xhttp.open('GET', 'https://api.streamafrica.net/search.php?query=' + artist + ' ' + song + '&service=' + API_SERVICE);
         xhttp.send();
     }
 
