@@ -14,7 +14,7 @@ const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iG
 const API_KEY = "18fe07917957c289983464588aabddfb";
 
 // Set HISTORIC to true to get the last songs played
-const HISTORIC = true;
+const HISTORIC = false;
 
 window.onload = function () {
     var page = new Page;
