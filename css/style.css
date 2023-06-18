@@ -67,7 +67,7 @@ body {
 .cover-album {
     max-width: 80%;
     margin: auto;
-    background: url('https://ucarecdn.com/3c5f4be1-fa66-4d75-b241-2573dc43f8a3/-/preview/-/quality/smart/-/format/auto/') no-repeat;
+    background: url('../img/cover.png') no-repeat;
     background-size: cover;
     border: 2px solid #fefefe;
     box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.4);
@@ -284,7 +284,7 @@ input[type=range]::-ms-thumb {
     margin-right: 15px;
     float: left;
     border-radius: 10px;
-    background: url('https://ucarecdn.com/3c5f4be1-fa66-4d75-b241-2573dc43f8a3/-/preview/-/quality/smart/-/format/auto/') no-repeat;
+    background: url('../img/cover.png') no-repeat;
     background-size: cover;
     border: 2px solid #fefefe;
    
