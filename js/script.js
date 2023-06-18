@@ -377,7 +377,7 @@ function getStreamingData() {
     var d = new Date();
 
     // Requisition with timestamp to prevent cache on mobile devices
-    xhttp.open('GET', 'https://api.streamafrica.net/zeno/index.php?z='+zenoid);
+    xhttp.open('GET', 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMING);
     xhttp.send();
 }
 
