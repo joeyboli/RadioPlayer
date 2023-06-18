@@ -5,8 +5,6 @@ const RADIO_NAME = 'Game! Radio 1';
 // SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY or AZURACAST. eg : spotify 
 var API_SERVICE = 'DEEZER';
 
-var azuracast_nowplaying_url = ''
-
 // URL of SHOUTCast streaming without / on the final, eg: http://streaming.com:8080
 const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iGi9WGVTqQ';
 
