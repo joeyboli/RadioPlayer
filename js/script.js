@@ -5,7 +5,7 @@ const RADIO_NAME = 'Game! Radio 1';
 // SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY or AZURACAST. eg : spotify 
 var API_SERVICE = 'DEEZER';
 
-// URL of SHOUTCast streaming without / on the final, eg: http://streaming.com:8080
+// Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
 const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iGi9WGVTqQ';
 
 // Visit https://api.vagalume.com.br/docs/ to get your API key
@@ -26,7 +26,7 @@ window.onload = function () {
     // Interval to get streaming data in miliseconds
     setInterval(function () {
         getStreamingData();
-    }, 7000);
+    }, 10000);
 
     var coverArt = document.getElementsByClassName('cover-album')[0];
 
