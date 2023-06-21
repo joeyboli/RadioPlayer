@@ -8,14 +8,20 @@ This is an HTML5 Internet Radio Player Based on [https://github.com/gsavio/playe
 Open The [Script.js](https://github.com/joeyboli/html5-shoutcast-icecast-zeno-player/blob/main/js/script.js) file and edit the lines Below.
 
 ```javascript
-// Chane This TO The Name of your Radio Station.
+// RADIO NAME
 const RADIO_NAME = 'Game! Radio 1';
 
-// SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY AVAILABLE 
+// SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY. eg : spotify 
 var API_SERVICE = 'DEEZER';
 
 // Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
-const URL_STREAMING = 'https://stream.zeno.fm/cfhkm5fs1uhvv';
+const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iGi9WGVTqQ';
+
+//PASTE YOUR MEDIA CP JSON URL HERE TO GET NOW PLAYING SONG TITLE.
+const MEDIACP_JSON_URL = ''
+
+//API URL / if you use MEDIA CP, CHANGE THIS TO : https://api.streamafrica.net/metadata/mediacp.php?url='+MEDIACP_JSON_URL
+const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMING
 
 
  ```
@@ -34,15 +40,10 @@ const URL_STREAMING = 'https://stream.zeno.fm/cfhkm5fs1uhvv';
 
 ## Feedback
 
-If you have any feedback, please reach out to me at adoboligh1@gmail.com
+If you have any feedback, please reach out to me at bankuboy@pm.me
 
 
 ## License
 
 [MIT](https://github.com/gsavio/player-shoutcast-html5/blob/master/LICENSE)
-
-
-## Acknowledgements
-
- - [Gsavio's Original Version](https://github.com/gsavio/player-shoutcast-html5/)
 
