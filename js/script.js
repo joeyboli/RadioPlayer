@@ -2,7 +2,7 @@
 
 const RADIO_NAME = 'Game! Radio 1';
 
-// SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY or AZURACAST. eg : spotify 
+// SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY  eg : spotify 
 var API_SERVICE = 'DEEZER';
 
 // Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
