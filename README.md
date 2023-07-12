@@ -1,7 +1,7 @@
 
 # HTML5 Internet Radio Player
 
-This is an HTML5 Internet Radio Player Based on [https://github.com/gsavio/player-shoutcast-html5](https://github.com/gsavio/player-shoutcast-html5)
+This is a fork of [https://github.com/gsavio/player-shoutcast-html5](https://github.com/gsavio/player-shoutcast-html5)
 
 # Documentation.
 
