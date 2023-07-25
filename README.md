@@ -31,7 +31,6 @@ const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMI
  Open The img folder and add your logo named "cover.png"
 
 
-
  
 ## Demo Screenshots
 
@@ -39,9 +38,21 @@ const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMI
 
 
 ## Supported Hosting Types
-Icecast / Shoutcast
-Zeno Radio
-RadioJar
+* Icecast / Shoutcast
+* Zeno Radio
+* RadioJar
+* Azuracast
+* Centova Cast
+* Everest Cast
+* MediaCP
+* Sonic Panel
+
+## Supported API Types
+* Apple Music / Itunes
+* Deezer
+* Spotify
+* Azuracast Now Playing API
+* MediaCP Now Playing API
 
 
 ## Feedback
