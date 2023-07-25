@@ -38,6 +38,12 @@ const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMI
 ![Demo Screenshot](https://i.ibb.co/xfXG7fb/Screenshot-2023-06-18-21-40-11.png)
 
 
+## Supported Hosting Types
+Icecast / Shoutcast
+Zeno Radio
+RadioJar
+
+
 ## Feedback
 
 If you have any feedback, please reach out to me at bankuboy@pm.me
