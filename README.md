@@ -46,11 +46,14 @@ const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMI
 * Everest Cast
 * MediaCP
 * Sonic Panel
+* [JoeyCast](https://joeycast.com)
 
-## Supported API Types
+## Supported API/Data Sources
 * Apple Music / Itunes
 * Deezer
 * Spotify
+* SoundCloud(Coming Soon)
+* BandCamp(Coming Soon)
 * Azuracast Now Playing API
 * MediaCP Now Playing API
 
