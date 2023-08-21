@@ -19,7 +19,7 @@ const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iG
 const MEDIACP_JSON_URL = ''
 
 //API URL / if you use MEDIA CP, CHANGE THIS TO : https://api.streamafrica.net/metadata/mediacp.php?url='+MEDIACP_JSON_URL
-const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMING
+const API_URL = 'https://api.streamafrica.net/metadata/index?z='+URL_STREAMING
 
 
  ```
@@ -66,7 +66,7 @@ If you have any feedback, please reach out to me at bankuboy@pm.me
 [MIT](https://github.com/gsavio/player-shoutcast-html5/blob/master/LICENSE)
 
 ## Credits
-[gsavio//player-shoutcast-html5](https://github.com/gsavio/player-shoutcast-html5)
-[streamafrica Free API](https://api.streamafrica.net/)
+* [gsavio//player-shoutcast-html5](https://github.com/gsavio/player-shoutcast-html5)
+* [streamafrica Free API](https://api.streamafrica.net/)
 
 
