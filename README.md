@@ -1,7 +1,5 @@
 
-# HTML5 Internet Radio Player
-
-This is a fork of [https://github.com/gsavio/player-shoutcast-html5](https://github.com/gsavio/player-shoutcast-html5)
+# HTML5 Icecast/Shoutcast/Zeno Full Page Radio Player
 
 # Documentation.
 
@@ -66,4 +64,7 @@ If you have any feedback, please reach out to me at bankuboy@pm.me
 ## License
 
 [MIT](https://github.com/gsavio/player-shoutcast-html5/blob/master/LICENSE)
+
+##Credits
+[gsavio//player-shoutcast-html5](https://github.com/gsavio/player-shoutcast-html5)
 
