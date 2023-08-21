@@ -65,6 +65,8 @@ If you have any feedback, please reach out to me at bankuboy@pm.me
 
 [MIT](https://github.com/gsavio/player-shoutcast-html5/blob/master/LICENSE)
 
-##Credits
+## Credits
 [gsavio//player-shoutcast-html5](https://github.com/gsavio/player-shoutcast-html5)
+[streamafrica Free API](https://api.streamafrica.net/)
+
 
