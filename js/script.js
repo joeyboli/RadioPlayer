@@ -9,7 +9,7 @@ var API_SERVICE = 'DEEZER';
 const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iGi9WGVTqQ';
 
 //API URL / if you use MEDIA CP, CHANGE THIS TO : https://api.streamafrica.net/metadata/mediacp.php?url='+MEDIACP_JSON_URL
-const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMING
+const API_URL = 'https://api.streamafrica.net/metadata/index?z='+URL_STREAMING
 
 // Visit https://api.vagalume.com.br/docs/ to get your API key
 const API_KEY = "18fe07917957c289983464588aabddfb";
@@ -94,7 +94,7 @@ function Page() {
             $historicDiv[n].classList.add('animated');
             $historicDiv[n].classList.add('slideInRight');
         }
-        xhttp.open('GET', 'https://api.streamafrica.net/new.search.php?query=' + info.artist + ' ' + info.song + '&service=' + API_SERVICE.toLowerCase());
+        xhttp.open('GET', 'https://api.streamafrica.net/new.search?query=' + info.artist + ' ' + info.song + '&service=' + API_SERVICE.toLowerCase());
         xhttp.send();
 
         setTimeout(function () {
@@ -173,7 +173,7 @@ function Page() {
                 }
             }
         }
-        xhttp.open('GET', 'https://api.streamafrica.net/new.search.php?query=' + artist + ' ' + song + '&service=' + API_SERVICE.toLowerCase());
+        xhttp.open('GET', 'https://api.streamafrica.net/new.search?query=' + artist + ' ' + song + '&service=' + API_SERVICE.toLowerCase());
         xhttp.send();
     }
 
