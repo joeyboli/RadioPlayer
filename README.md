@@ -47,10 +47,30 @@ const API_URL = 'https://api.streamafrica.net/metadata/index?z='+URL_STREAMING
 * Apple Music / Itunes
 * Deezer
 * Spotify
-* SoundCloud
-* BandCamp
-* Azuracast
-* MediaCP
+* Azuracast Now Playing (Paid)
+
+
+# JCPlayer Pro
+#### ScreenShot
+[![](https://i.ibb.co/1sy1TPj/Screenshot-2023-09-03-23-44-30.pnghttp://)](https://i.ibb.co/1sy1TPj/Screenshot-2023-09-03-23-44-30.pnghttp://)
+
+## Features
+- Supports Itunes, Spotify, Azuracast, MediaCP, Deezer.
+- Admin Panel For Multi Station.
+- Supports MP3, AAC.
+- Single Or Multi Radio Stations.
+- StreamAfrica Premium API.
+
+#### Price
+100$ Per Year.
+
+#### Client Demos.
+- [Smooth Sailing Radio Demo](http://player.smoothsailingradio.com/ "Smooth Sailing Radio Demo")
+- [Box Radio Player](https://player.boxradio.net/)
+
+#### Purchase URL.
+[Buy JCPlayer Pro](https://spp.joeycast.com/store/jcplayer/jcplayer-pro/4)
+
 
 
 ## Feedback
@@ -63,7 +83,7 @@ If you have any feedback, please reach out to me at bankuboy@pm.me
 [MIT](https://github.com/gsavio/player-shoutcast-html5/blob/master/LICENSE)
 
 ## Credits
-* [gsavio//player-shoutcast-html5](https://github.com/gsavio/player-shoutcast-html5)
+* [gsavio/player-shoutcast-html5](https://github.com/gsavio/player-shoutcast-html5)
 * [streamafrica Free API](https://api.streamafrica.net/)
 
 
