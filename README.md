@@ -47,7 +47,9 @@ const API_URL = 'https://api.streamafrica.net/metadata/index?z='+URL_STREAMING
 * Apple Music / Itunes
 * Deezer
 * Spotify
-* Azuracast Now Playing (Paid)
+* Azuracast Now Playing API (Pro)
+* MediCP Now Playing API (Pro)
+* CentovaCast Now Playing API (Pro)
 
 
 # JCPlayer Pro
