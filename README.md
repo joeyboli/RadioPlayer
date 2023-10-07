@@ -68,7 +68,7 @@ const API_URL = 'https://api.streamafrica.net/metadata/index?z='+URL_STREAMING
 
 #### Client Demos.
 - [Smooth Sailing Radio Demo](http://player.smoothsailingradio.com/ "Smooth Sailing Radio Demo")
-- [Box Radio Player](https://player.boxradio.net/)
+- [Box Radio Player](https://boxradioplayer.pages.dev/)
 
 #### Purchase URL.
 [Buy JCPlayer Pro](https://spp.joeycast.com/store/jcplayer/jcplayer-pro/4)
