@@ -21,6 +21,12 @@ const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMI
 
  ```
 
+##Free Hosting
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjoeyboli%2FRadioPlayer)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/joeyboli/RadioPlayer/)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/_QMSCK)
+
+
  ## Change Logo.
 
  Open The img folder and add your logo named "cover.png"
