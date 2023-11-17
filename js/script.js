@@ -5,10 +5,10 @@ const RADIO_NAME = 'Game! Radio 1';
 // SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY  eg : spotify 
 var API_SERVICE = 'SPOTIFY';
 
-// Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
+// Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR ETC.... DOES NOT SUPPORT HLS
 const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iGi9WGVTqQ';
 
-//API URL / if you use MEDIA CP, CHANGE THIS TO : https://api.streamafrica.net/metadata/mediacp.php?url='+MEDIACP_JSON_URL
+//NOW PLAYING API.
 const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMING
 
 // Visit https://api.vagalume.com.br/docs/ to get your API key
