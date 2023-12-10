@@ -9,7 +9,7 @@ var API_SERVICE = 'SPOTIFY';
 const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iGi9WGVTqQ';
 
 //NOW PLAYING API.
-const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMING
+const API_URL = 'https://api.joeycast.com/songid/4eb1b192-cff3-4b95-a46c-13cbc5048730'
 
 // Visit https://api.vagalume.com.br/docs/ to get your API key
 const API_KEY = "18fe07917957c289983464588aabddfb";
