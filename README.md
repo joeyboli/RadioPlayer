@@ -65,7 +65,7 @@ const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMI
 
 # JCPlayer Pro
 #### ScreenShot
-[![](https://i.ibb.co/1sy1TPj/Screenshot-2023-09-03-23-44-30.pnghttp://)](https://i.ibb.co/1sy1TPj/Screenshot-2023-09-03-23-44-30.pnghttp://)
+[![](https://icdn2.streamafrica.net/boxradiostacks/6575160608505.jpg)](https://icdn2.streamafrica.net/boxradiostacks/6575160608505.jpg)
 
 ## Features
 - Supports Itunes, Spotify, Azuracast, MediaCP, Deezer.
