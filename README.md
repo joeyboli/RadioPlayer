@@ -21,6 +21,10 @@ const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMI
 
  ```
 
+## Premium Now Playing API
+
+[Buy](https://spp.joeycast.com/store/jcplayer/jcplayer-free-api/5)
+
 ## Free Hosting
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjoeyboli%2FRadioPlayer)
