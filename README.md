@@ -77,9 +77,8 @@ const API_URL = 'https://api.streamafrica.net/metadata/index.php?z='+URL_STREAMI
 #### Price
 100$ Per Year.
 
-#### Client Demos.
-- [Smooth Sailing Radio Demo](http://player.smoothsailingradio.com/ "Smooth Sailing Radio Demo")
-- [Box Radio Player](https://boxradioplayer.pages.dev/)
+#### Demo.
+- [JC Player Pro Demo](https://player.joeycast.com/demo/ "JC Player Pro Demo")
 
 #### Purchase URL.
 [Buy JCPlayer Pro](https://spp.joeycast.com/store/jcplayer/jcplayer-pro/4)
