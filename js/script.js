@@ -9,7 +9,7 @@ var API_SERVICE = 'deezer';
 const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iGi9WGVTqQ';
 
 //NOW PLAYING API.
-const API_URL = 'https://api-v2.streamafrica.net/metadata?url=' + URL_STREAMING
+const API_URL = 'https://api-v2.joeycast.com/api/metadata/0127c57b-7174-4e2b-9b28-b5e0f313309e'
 
 // Visit https://api.vagalume.com.br/docs/ to get your API key
 const API_KEY = "18fe07917957c289983464588aabddfb";
