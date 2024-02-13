@@ -15,7 +15,7 @@ var API_SERVICE = 'DEEZER';
 // Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
 const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iGi9WGVTqQ';
 
-//API URL / if you use MEDIA CP, CHANGE THIS TO : https://api.streamafrica.net/metadata/mediacp.php?url='+MEDIACP_JSON_URL
+//API URL GET API On Joeycast Website
 const API_URL = 'https://api-v2.joeycast.com/api/metadata/0127c57b-7174-4e2b-9b28-b5e0f313309e'
 
 
