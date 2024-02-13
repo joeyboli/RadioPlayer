@@ -16,7 +16,7 @@ var API_SERVICE = 'DEEZER';
 const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iGi9WGVTqQ';
 
 //API URL / if you use MEDIA CP, CHANGE THIS TO : https://api.streamafrica.net/metadata/mediacp.php?url='+MEDIACP_JSON_URL
-const API_URL = 'https://api-v2.streamafrica.net/metadata?url=' + URL_STREAMING
+const API_URL = 'https://api-v2.joeycast.com/api/metadata/0127c57b-7174-4e2b-9b28-b5e0f313309e'
 
 
  ```
