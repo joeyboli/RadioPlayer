@@ -21,9 +21,9 @@ const API_URL = 'https://api-v2.joeycast.com/api/metadata/0127c57b-7174-4e2b-9b2
 
  ```
 
-## Premium Now Playing API
+## RadioAPI Docs
 
-[Buy](https://spp.joeycast.com/store/jcplayer/jcplayer-free-api/5)
+[Buy](https://docs.radioapi.me)
 
 ## Free Hosting
 
@@ -52,8 +52,7 @@ const API_URL = 'https://api-v2.joeycast.com/api/metadata/0127c57b-7174-4e2b-9b2
 * Everest Cast
 * MediaCP
 * Sonic Panel
-* [JoeyCast](https://joeycast.com)
-
+* 
 ## Supported API/Data Sources
 * Apple Music / Itunes
 * Deezer
@@ -78,7 +77,7 @@ const API_URL = 'https://api-v2.joeycast.com/api/metadata/0127c57b-7174-4e2b-9b2
 100$ Per Year.
 
 #### Demo.
-- [JC Player Pro Demo](https://player.joeycast.com/demo/ "JC Player Pro Demo")
+- [JC Player Pro Demo](https://player.boxradio.net/ "JC Player Pro Demo")
 
 #### Purchase URL.
 [Buy JCPlayer Pro](https://spp.joeycast.com/store/jcplayer/jcplayer-pro/4)
