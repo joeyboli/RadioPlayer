@@ -16,8 +16,7 @@ var API_SERVICE = 'DEEZER';
 const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iGi9WGVTqQ';
 
 //API URL GET API On Joeycast Website
-const API_URL = 'https://api-v2.joeycast.com/api/metadata/0127c57b-7174-4e2b-9b28-b5e0f313309e'
-
+const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
 
  ```
 
