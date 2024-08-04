@@ -22,19 +22,16 @@ const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
 
 ## RadioAPI Docs
 
-[Buy](https://docs.radioapi.me)
+[https://api.streamafrica.net](https://api.streamafrica.net/)
 
 ## Free Hosting
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjoeyboli%2FRadioPlayer)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/joeyboli/RadioPlayer/)
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/_QMSCK)
-
 
  ## Change Logo.
 
  Open The img folder and add your logo named "cover.png"
-
 
  
 ## Demo Screenshots
@@ -51,14 +48,11 @@ const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
 * Everest Cast
 * MediaCP
 * Sonic Panel
-* 
+  
 ## Supported API/Data Sources
 * Apple Music / Itunes
 * Deezer
 * Spotify
-* Azuracast Now Playing API (Pro)
-* MediCP Now Playing API (Pro)
-* CentovaCast Now Playing API (Pro)
 
 
 # JCPlayer Pro
@@ -73,7 +67,7 @@ const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
 - StreamAfrica Premium API.
 
 #### Price
-100$ Per Year.
+200$ One Time.
 
 #### Demo.
 - [JC Player Pro Demo](https://player.boxradio.net/ "JC Player Pro Demo")
