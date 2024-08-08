@@ -56,8 +56,9 @@ const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
 
 
 # JCPlayer Pro
+
 #### ScreenShot
-[![](https://icdn2.streamafrica.net/boxradiostacks/6575160608505.jpg)](https://icdn2.streamafrica.net/boxradiostacks/6575160608505.jpg)
+[![](https://i.imghippo.com/files/U8MAq1723099205.png)](https://i.imghippo.com/files/U8MAq1723099205.png)
 
 ## Features
 - Supports Itunes, Spotify, Azuracast, MediaCP, Deezer.
@@ -88,6 +89,6 @@ If you have any feedback, please reach out to me at bankuboy@pm.me
 
 ## Credits
 * [gsavio/player-shoutcast-html5](https://github.com/gsavio/player-shoutcast-html5)
-* [streamafrica Free API](https://api.streamafrica.net/)
+* [streamafrica's RadioAPI](https://api.streamafrica.net/)
 
 
