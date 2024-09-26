@@ -58,17 +58,20 @@ const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
 # JCPlayer Pro
 
 #### ScreenShot
-[![](https://i.imghippo.com/files/U8MAq1723099205.png)](https://i.imghippo.com/files/U8MAq1723099205.png)
+[![](https://icdn.global.ssl.fastly.net/stacks/a2649a716c819435.png
+)](https://icdn.global.ssl.fastly.net/stacks/a2649a716c819435.png)
 
 ## Features
-- Supports Itunes, Spotify, Azuracast, MediaCP, Deezer.
-- Admin Panel For Multi Station.
-- Supports MP3, AAC.
+- Supports Fetching Song Info From Itunes, Deezer, Spotify, Tidal, Youtube Music, Everest Panel API, Azuracast API, Live 365 API, RadioKing API & Many More
+- Admin Panel To Manage All Info.
+- Support Custom Names Via Dashboard
+- Supports MP3, AAC, HLS Streams,
+- More Than 20 Stream Services
 - Single Or Multi Radio Stations.
 - StreamAfrica Premium API.
 
 #### Price
-200$ One Time.
+199$ One Time Price.
 
 #### Demo.
 - [JC Player Pro Demo](https://player.boxradio.net/ "JC Player Pro Demo")
@@ -80,7 +83,7 @@ const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
 
 ## Feedback
 
-If you have any feedback, please reach out to me at bankuboy@pm.me
+If you have any feedback, please reach out to me at bankuboy@proton.me
 
 
 ## License
@@ -89,6 +92,6 @@ If you have any feedback, please reach out to me at bankuboy@pm.me
 
 ## Credits
 * [gsavio/player-shoutcast-html5](https://github.com/gsavio/player-shoutcast-html5)
-* [streamafrica's RadioAPI](https://api.streamafrica.net/)
+* [Streamafrica's RadioAPI](https://api.streamafrica.net/)
 
 
