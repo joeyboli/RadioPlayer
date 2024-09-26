@@ -61,6 +61,8 @@ const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
 [![](https://icdn.global.ssl.fastly.net/stacks/a2649a716c819435.png
 )](https://icdn.global.ssl.fastly.net/stacks/a2649a716c819435.png)
 
+[![](https://icdn.global.ssl.fastly.net/stacks/07bbad6be8dcd525.png)](https://icdn.global.ssl.fastly.net/stacks/07bbad6be8dcd525.png)
+
 ## Features
 - Supports Fetching Song Info From Itunes, Deezer, Spotify, Tidal, Youtube Music, Everest Panel API, Azuracast API, Live 365 API, RadioKing API & Many More
 - Admin Panel To Manage All Info.
