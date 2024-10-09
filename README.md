@@ -76,7 +76,7 @@ const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
 199$ One Time Price.
 
 #### Demo.
-- [JC Player Pro Demo](https://player.boxradio.net/ "JC Player Pro Demo")
+- [JC Player Pro Demo](https://player.streamradio.online/ "JC Player Pro Demo")
 
 #### Purchase URL.
 [Buy JCPlayer Pro](https://spp.joeycast.com/store/jcplayer/jcplayer-pro/4)
