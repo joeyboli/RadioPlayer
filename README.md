@@ -58,25 +58,28 @@ const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
 # JCPlayer Pro
 
 #### ScreenShot
-[![](https://icdn.global.ssl.fastly.net/stacks/a2649a716c819435.png
-)](https://icdn.global.ssl.fastly.net/stacks/a2649a716c819435.png)
+[![](https://i.ibb.co/41fgDTR/Screenshot-2024-10-16-at-1-00-39-PM.png
+)](https://i.ibb.co/41fgDTR/Screenshot-2024-10-16-at-1-00-39-PM.png)
 
-[![](https://icdn.global.ssl.fastly.net/stacks/07bbad6be8dcd525.png)](https://icdn.global.ssl.fastly.net/stacks/07bbad6be8dcd525.png)
+[![](https://i.ibb.co/4RG2VWW/Screenshot-2024-10-16-at-1-01-00-PM.png)](https://i.ibb.co/4RG2VWW/Screenshot-2024-10-16-at-1-01-00-PM.png)
+
+[![](https://i.ibb.co/h7nFnL6/Screenshot-2024-10-16-at-1-01-08-PM.png)](https://i.ibb.co/h7nFnL6/Screenshot-2024-10-16-at-1-01-08-PM.png)
+
 
 ## Features
-- Supports Fetching Song Info From Itunes, Deezer, Spotify, Tidal, Youtube Music, Everest Panel API, Azuracast API, Live 365 API, RadioKing API & Many More
-- Admin Panel To Manage All Info.
-- Support Custom Names Via Dashboard
-- Supports MP3, AAC, HLS Streams,
-- More Than 20 Stream Services
-- Single Or Multi Radio Stations.
-- StreamAfrica Premium API.
+1. Display Now Playing Song Info (Artwork, Artist, Year, Genre)
+2. Free Control Panel to manage everything.
+3. Supports Fetching Song Info From Itunes, Deezer, Spotify, Tidal, Youtube Music, Azuracast API, Live 365 API, RadioKing API & Many More
+4. Supports HLS & Any Shoutcast/Icecast Compatible Stream.
+5. Displays Last 5 Played Songs
+6. Listeners Can Stream The Currently Playing Track On More Than 20 Streaming Services.
+7. Supports Single Or Multi Radio Stations.
 
 #### Price
-199$ One Time Price.
+200$ One Time Price.
 
 #### Demo.
-- [JC Player Pro Demo](https://player.streamradio.online/ "JC Player Pro Demo")
+- [JC Player Pro Demo](https://player.joeycast.com/341cf564-b130-4db6-bd67-ede75af533c2 "JC Player Pro Demo")
 
 #### Purchase URL.
 [Buy JCPlayer Pro](https://spp.joeycast.com/store/jcplayer/jcplayer-pro/4)
