@@ -20,9 +20,9 @@ const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
 
  ```
 
-## RadioAPI Docs
+## StreamAfrica's RadioAPI
 
-[https://api.streamafrica.net](https://api.streamafrica.net/)
+[https://radioapi.me](https://radioapi.me/)
 
 ## Free Hosting
 
@@ -76,10 +76,10 @@ const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
 7. Supports Single Or Multi Radio Stations.
 
 #### Price
-200$ One Time Price.
+199$ One Time Price.
 
 #### Demo.
-- [JC Player Pro Demo](https://player.joeycast.com/341cf564-b130-4db6-bd67-ede75af533c2 "JC Player Pro Demo")
+- [JC Player Pro Demo](http://341cf564-b130-4db6-bd67-ede75af533c2.player.joeycast.com "JC Player Pro Demo")
 
 #### Purchase URL.
 [Buy JCPlayer Pro](https://spp.joeycast.com/store/jcplayer/jcplayer-pro/4)
