@@ -9,7 +9,7 @@ var API_SERVICE = 'deezer';
 const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iGi9WGVTqQ';
 
 //NOW PLAYING API.
-const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
+const API_URL = 'https://prod-api.radioapi.me/streamtitle/8ce17c30-2fc5-4f1d-a6d8-4ac3ca9b35b6';
 
 // Visit https://api.vagalume.com.br/docs/ to get your API key
 const API_KEY = "18fe07917957c289983464588aabddfb";
@@ -94,7 +94,7 @@ function Page() {
             $historicDiv[n].classList.add('animated');
             $historicDiv[n].classList.add('slideInRight');
         }
-        xhttp.open('GET', 'https://api-v2.streamafrica.net/musicsearch?query=' + info.artist + ' ' + info.song + '&service=' + API_SERVICE.toLowerCase());
+        xhttp.open('GET', 'https://prod-api.radioapi.me/1ceb9727-3e36-4e64-99e7-f776b50c7f4f/musicsearch?query=' + info.artist + ' ' + info.song);
         xhttp.send();
 
         setTimeout(function () {
@@ -168,7 +168,7 @@ function Page() {
                 }
             }
         }
-        xhttp.open('GET', 'https://api-v2.streamafrica.net/musicsearch?query=' + artist + ' ' + song + '&service=' + API_SERVICE.toLowerCase());
+        xhttp.open('GET', 'https://prod-api.radioapi.me/1ceb9727-3e36-4e64-99e7-f776b50c7f4f/musicsearch?query=' + artist + ' ' + song);
         xhttp.send();
     }
 
