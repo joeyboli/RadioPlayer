@@ -17,7 +17,7 @@ A modern, responsive web-based radio player with a beautiful interface. Stream y
 
 ## 🔌 Supported APIs
 
-This radio player supports integration with multiple radio streaming APIs:
+This radio player supports integration with multiple radio streaming APIs through [RadioAPI.me](https://radioapi.me):
 
 - **Azuracast API** - Open-source radio broadcasting suite
 - **Live365 API** - Professional internet radio platform
