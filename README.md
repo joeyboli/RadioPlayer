@@ -2,7 +2,7 @@
 
 A modern, responsive web-based radio player with a beautiful Spotify-inspired interface. Stream your favorite radio station with real-time song information, lyrics, and playback history.
 
-![Radio Player Preview](img/imageupdate.png)
+![Radio Player Preview](img/cover.png)
 
 ## ✨ Features
 
@@ -28,14 +28,9 @@ A modern, responsive web-based radio player with a beautiful Spotify-inspired in
    - Update the `URL_STREAMING` constant with your stream URL
    - Get your API endpoint from [RadioAPI.me](https://radioapi.me)
 
-3. **Serve the files**
-   ```bash
-   python -m http.server 8000
+3. **Open in browser**
    ```
-
-4. **Open in browser**
-   ```
-   http://localhost:8000
+   Open index.html in your browser
    ```
 
 ## ⚙️ Configuration
