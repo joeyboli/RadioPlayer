@@ -15,6 +15,26 @@ A modern, responsive web-based radio player with a beautiful interface. Stream y
 - **🎛️ Volume Control**: Precise volume control with keyboard shortcuts
 - **⌨️ Keyboard Shortcuts**: Full keyboard navigation support
 
+## 🔌 Supported APIs
+
+This radio player supports integration with multiple radio streaming APIs:
+
+- **Azuracast API** - Open-source radio broadcasting suite
+- **Live365 API** - Professional internet radio platform
+- **RadioKing API** - European radio streaming service
+
+## 🎵 Song Info Sources
+
+Get detailed song information from multiple music platforms:
+
+- **iTunes (Apple Music)** - Apple's music catalog
+- **Spotify** - World's largest music streaming platform
+- **YouTube Music** - Google's music streaming service
+- **Deezer** - French music streaming service
+- **KKBOX** - Asian music streaming platform
+- **Line Music** - Japanese music streaming service
+- **FLOMusic** - Korean music streaming platform
+
 ## 🚀 Quick Start
 
 1. **Clone the repository**
