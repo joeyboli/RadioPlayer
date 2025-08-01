@@ -2,7 +2,7 @@
 
 A modern, responsive web-based radio player with a beautiful interface. Stream your favorite radio station with real-time song information, lyrics, and playback history.
 
-![Radio Player Preview](img/cover.png)
+![Radio Player Preview](img/imageupdate.png)
 
 ## ✨ Features
 
