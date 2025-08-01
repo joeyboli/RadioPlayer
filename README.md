@@ -1,102 +1,250 @@
+# 🎵 Game! Radio Player
 
-# HTML5 Icecast/Shoutcast/Zeno Full Page Radio Player
+A modern, responsive web-based radio player with a beautiful Spotify-inspired interface. Stream your favorite radio station with real-time song information, lyrics, and playback history.
 
-# Documentation.
+![Radio Player Preview](img/cover.png)
 
-Open The [Script.js](https://github.com/joeyboli/html5-shoutcast-icecast-zeno-player/blob/main/js/script.js) file and edit the lines Below.
+## ✨ Features
+
+- **🎧 Live Streaming**: Supports multiple streaming protocols (Icecast, Zeno, Shoutcast, Radiojar)
+- **🎨 Modern UI**: Spotify-inspired interface with smooth animations
+- **📱 Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+- **🎵 Real-time Metadata**: Displays current song, artist, and album artwork
+- **📜 Lyrics Integration**: Automatic lyrics lookup using Vagalume API
+- **📚 Playback History**: Shows up to 5 recently played songs
+- **🎛️ Volume Control**: Precise volume control with keyboard shortcuts
+- **⌨️ Keyboard Shortcuts**: Full keyboard navigation support
+- **🎨 Dynamic Artwork**: Album covers with loading animations
+- **🔊 Media Session**: Integration with browser media controls
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- A radio stream URL
+- (Optional) Vagalume API key for lyrics
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/radio-player.git
+   cd radio-player
+   ```
+
+2. **Install dependencies** (if using npm/pnpm)
+   ```bash
+   pnpm install
+   ```
+
+3. **Configure your radio stream**
+   - Open `js/script.js`
+   - Update the `URL_STREAMING` constant with your stream URL
+   - Update the `API_URL` with your metadata API endpoint
+
+4. **Serve the files**
+   ```bash
+   # Using Python
+   python -m http.server 8000
+   
+   # Using Node.js
+   npx serve .
+   
+   # Using PHP
+   php -S localhost:8000
+   ```
+
+5. **Open in browser**
+   ```
+   http://localhost:8000
+   ```
+
+## ⚙️ Configuration
+
+### Stream Configuration
+
+Edit `js/script.js` to configure your radio stream:
 
 ```javascript
-// RADIO NAME
-const RADIO_NAME = 'Game! Radio 1';
+// Change Stream URL Here
+const URL_STREAMING = "https://your-stream-url.com/stream"
 
-// SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY. eg : spotify 
-var API_SERVICE = 'DEEZER';
+// API endpoint for metadata
+const API_URL = "https://your-api-endpoint.com/metadata"
 
-// Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
-const URL_STREAMING = 'https://stream-51.zeno.fm/cfhkm5fs1uhvv?zs=HOu6hxV1SG-7iGi9WGVTqQ';
+// Vagalume API key for lyrics (optional)
+const API_KEY = "your-vagalume-api-key"
+```
 
-//API URL GET API On Joeycast Website
-const API_URL = 'https://api-v2.streamafrica.net/icyv2?url=' + URL_STREAMING;
+### Supported Stream Types
 
- ```
+- **Icecast**: `http://icecast.server.com:8000/stream`
+- **Shoutcast**: `http://shoutcast.server.com:8000/stream`
+- **Radiojar**: `https://stream.radiojar.com/stream`
+- **Zeno**: `https://zeno.fm/stream`
 
-## StreamAfrica's RadioAPI
+### API Configuration
 
-[https://radioapi.me](https://radioapi.me/)
+The player expects a JSON API response with the following structure:
 
-## Free Hosting
+```json
+{
+  "title": "Song Title",
+  "artist": "Artist Name",
+  "art": "https://album-art-url.com/cover.jpg",
+  "history": [
+    {
+      "song": "Previous Song",
+      "artist": "Previous Artist",
+      "artwork": "https://previous-artwork-url.com/cover.jpg"
+    }
+  ]
+}
+```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjoeyboli%2FRadioPlayer)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/joeyboli/RadioPlayer/)
+## 🎮 Keyboard Shortcuts
 
- ## Change Logo.
+| Key | Action |
+|-----|--------|
+| `Space` or `P` | Play/Pause |
+| `↑` | Volume Up |
+| `↓` | Volume Down |
+| `M` | Mute/Unmute |
+| `0-9` | Set volume to 0-90% |
 
- Open The img folder and add your logo named "cover.png"
+## 🎨 Customization
 
- 
-## Demo Screenshots
+### Styling
 
-![Demo Screenshot](https://i.ibb.co/xfXG7fb/Screenshot-2023-06-18-21-40-11.png)
+The player uses CSS custom properties for easy theming. Edit `css/style.css` to customize:
 
+```css
+:root {
+  --primary-color: #1db954;
+  --secondary-color: #191414;
+  --text-color: #ffffff;
+  --background-color: #121212;
+}
+```
 
-## Supported Hosting Types
-* Icecast / Shoutcast
-* Zeno Radio
-* RadioJar
-* Azuracast
-* Centova Cast
-* Everest Cast
-* MediaCP
-* Sonic Panel
-  
-## Supported API/Data Sources
-* Apple Music / Itunes
-* Deezer
-* Spotify
+### History Items
 
+To change the number of history items displayed:
 
-# JCPlayer Pro
+1. Edit `js/script.js`
+2. Modify the `HISTORY_ITEMS_COUNT` constant in `initializeHistoryItems()`
 
-#### ScreenShot
-[![](https://i.ibb.co/41fgDTR/Screenshot-2024-10-16-at-1-00-39-PM.png
-)](https://i.ibb.co/41fgDTR/Screenshot-2024-10-16-at-1-00-39-PM.png)
+```javascript
+const HISTORY_ITEMS_COUNT = 10 // Change from 5 to desired number
+```
 
-[![](https://i.ibb.co/4RG2VWW/Screenshot-2024-10-16-at-1-01-00-PM.png)](https://i.ibb.co/4RG2VWW/Screenshot-2024-10-16-at-1-01-00-PM.png)
+## 📱 Browser Support
 
-[![](https://i.ibb.co/h7nFnL6/Screenshot-2024-10-16-at-1-01-08-PM.png)](https://i.ibb.co/h7nFnL6/Screenshot-2024-10-16-at-1-01-08-PM.png)
+- ✅ Chrome 60+
+- ✅ Firefox 55+
+- ✅ Safari 12+
+- ✅ Edge 79+
 
+## 🔧 Development
 
-## Features
-1. Display Now Playing Song Info (Artwork, Artist, Year, Genre)
-2. Free Control Panel to manage everything.
-3. Supports Fetching Song Info From Itunes, Deezer, Spotify, Tidal, Youtube Music, Azuracast API, Live 365 API, RadioKing API & Many More
-4. Supports HLS & Any Shoutcast/Icecast Compatible Stream.
-5. Displays Last 5 Played Songs
-6. Listeners Can Stream The Currently Playing Track On More Than 20 Streaming Services.
-7. Supports Single Or Multi Radio Stations.
+### Project Structure
 
-#### Price
-199$ One Time Price.
+```
+radio-player/
+├── css/
+│   ├── animate.css          # Animation library
+│   ├── bootstrap.min.css    # Bootstrap framework
+│   ├── font-awesome.min.css # Icon library
+│   └── style.css           # Custom styles
+├── fonts/                  # Font Awesome fonts
+├── img/                   # Images and artwork
+├── js/
+│   ├── bootstrap.min.js   # Bootstrap JavaScript
+│   └── script.js         # Main application logic
+├── index.html            # Main HTML file
+├── package.json          # Dependencies
+└── README.md            # This file
+```
 
-#### Demo.
-- [JC Player Pro Demo](http://341cf564-b130-4db6-bd67-ede75af533c2.player.joeycast.com "JC Player Pro Demo")
+### Key Functions
 
-#### Purchase URL.
-[Buy JCPlayer Pro](https://spp.joeycast.com/store/jcplayer/jcplayer-pro/4)
+- `Page()` - Handles UI updates and DOM manipulation
+- `Player()` - Manages audio playback and controls
+- `getStreamingData()` - Fetches metadata from API
+- `initializeHistoryItems()` - Dynamically generates history items
 
+## 🌐 API Integration
 
+### Vagalume Lyrics API
 
-## Feedback
+To enable lyrics functionality:
 
-If you have any feedback, please reach out to me at bankuboy@proton.me
+1. Visit [Vagalume API](https://api.vagalume.com.br/docs/)
+2. Get your API key
+3. Update the `API_KEY` constant in `js/script.js`
 
+### Custom Metadata API
 
-## License
+The player expects a REST API endpoint that returns JSON metadata. Implement your own API or use services like:
 
-[MIT](https://github.com/gsavio/player-shoutcast-html5/blob/master/LICENSE)
+- RadioAPI.me
+- Radio Browser API
+- Custom Icecast metadata parser
 
-## Credits
-* [gsavio/player-shoutcast-html5](https://github.com/gsavio/player-shoutcast-html5)
-* [Streamafrica's RadioAPI](https://api.streamafrica.net/)
+## 🐛 Troubleshooting
 
+### Common Issues
 
+**Stream not playing:**
+- Check if the stream URL is accessible
+- Verify CORS settings on your server
+- Ensure the stream format is supported
+
+**Metadata not updating:**
+- Verify API endpoint is working
+- Check browser console for errors
+- Ensure API response format matches expected structure
+
+**Lyrics not showing:**
+- Verify Vagalume API key is valid
+- Check if song/artist exists in Vagalume database
+- Ensure API requests are not blocked by CORS
+
+### Debug Mode
+
+Enable debug logging by opening browser console and looking for:
+- API response data
+- Stream connection status
+- Error messages
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 🙏 Acknowledgments
+
+- [Bootstrap](https://getbootstrap.com/) - CSS framework
+- [Font Awesome](https://fontawesome.com/) - Icons
+- [Animate.css](https://animate.style/) - Animations
+- [Vagalume](https://www.vagalume.com.br/) - Lyrics API
+
+## 📞 Support
+
+If you need help or have questions:
+
+- Create an [issue](https://github.com/yourusername/radio-player/issues)
+- Check the [documentation](https://github.com/yourusername/radio-player/wiki)
+- Join our [Discord community](https://discord.gg/your-community)
+
+---
+
+Made with ❤️ for radio lovers everywhere
