@@ -1,6 +1,6 @@
-# 🎵 Game! Radio Player
+# 🎵 Html5 Full Page Internet Radio Player
 
-A modern, responsive web-based radio player with a beautiful Spotify-inspired interface. Stream your favorite radio station with real-time song information, lyrics, and playback history.
+A modern, responsive web-based radio player with a beautiful interface. Stream your favorite radio station with real-time song information, lyrics, and playback history.
 
 ![Radio Player Preview](img/cover.png)
 
@@ -19,8 +19,8 @@ A modern, responsive web-based radio player with a beautiful Spotify-inspired in
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/radio-player.git
-   cd radio-player
+   git clone https://github.com/joeyboli/radioplayer.git
+   cd radioplayer
    ```
 
 2. **Configure your radio stream**
@@ -63,17 +63,6 @@ To change the number of history items displayed, edit `js/script.js` and modify 
 - ✅ Safari 12+
 - ✅ Edge 79+
 
-## 🔧 Project Structure
-
-```
-radio-player/
-├── css/          # Stylesheets
-├── fonts/        # Font Awesome fonts
-├── img/          # Images and artwork
-├── js/           # JavaScript files
-├── index.html    # Main HTML file
-└── README.md     # This file
-```
 
 ## 🌐 API Integration
 
@@ -91,13 +80,3 @@ For lyrics functionality, get a Vagalume API key from [Vagalume API](https://api
 
 MIT License
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Open a Pull Request
-
----
-
-Made with ❤️ for radio lovers everywhere
