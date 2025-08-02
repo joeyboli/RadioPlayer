@@ -23,7 +23,15 @@ This radio player supports integration with multiple radio streaming APIs throug
 - **Live365 API** - Professional internet radio platform
 - **RadioKing API** - European radio streaming service
 
-## 🎵 Song Info Sources
+## 📡 Supported Stream Types
+
+This radio player supports various streaming protocols and platforms:
+
+- **Icecast** - Open-source streaming media server
+- **Shoutcast** - Nullsoft's streaming media server
+- **Zeno** - Modern streaming platform
+- **Radiojar** - Cloud-based radio streaming
+- **HTTP/HTTPS Streams** - Direct audio stream URLs
 
 Get detailed song information from multiple music platforms:
 
