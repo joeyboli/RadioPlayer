@@ -507,7 +507,7 @@ function getStreamingData() {
         var page = new Page()
 
         // Extract current song info from unified API
-        const song = data.title || ""
+        const song = data.song || ""
         const artist = data.artist || ""
 
         // Change the title
@@ -523,8 +523,8 @@ function getStreamingData() {
           page.refreshCurrentSong(song, artist)
 
           // Update artwork using the direct URL from API
-          if (data.art) {
-            page.refreshCover(data.art, song, artist)
+          if (data.artwork) {
+            page.refreshCover(data.artwork, song, artist)
           }
 
           // Update lyrics
