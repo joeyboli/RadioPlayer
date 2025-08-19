@@ -94,9 +94,7 @@ To change the number of history items displayed, edit `js/script.js` and modify 
 
 ## 🌐 API Integration
 
-This player uses [RadioAPI.me](https://radioapi.me) for metadata. Get your API endpoint from their service.
-
-For lyrics functionality, get a Vagalume API key from [Vagalume API](https://api.vagalume.com.br/docs/).
+This player uses [RadioAPI.me](https://radioapi.me) for metadata and its lyrics. Get your API endpoint from their service.
 
 ## 🐛 Troubleshooting
 

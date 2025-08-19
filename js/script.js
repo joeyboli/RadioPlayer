@@ -1,13 +1,10 @@
-const RADIO_NAME = "Game! Radio"
+const RADIO_NAME = "Afrofusion Rap"
 
 // Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR ETC.... DOES NOT SUPPORT HLS
-const URL_STREAMING = "https://play.streamafrica.net/gameradio"
+const URL_STREAMING = "https://play.streamafrica.net/afrofusionrap"
 
 // NEW UNIFIED API ENDPOINT
-const API_URL = "https://prod-api.radioapi.me/metadata/51a50466-49b7-444c-9a4a-4caf0a1aff64"
-
-// Visit https://api.vagalume.com.br/docs/ to get your API key
-const API_KEY = "18fe07917957c289983464588aabddfb"
+const API_URL = "https://prod-api.radioapi.me/metadata/92f09a6d-37f1-4c10-bf2a-018bf03136fc"
 
 // Loading state management
 let isInitialLoad = true
@@ -19,7 +16,9 @@ const currentSongData = {
   artist: "",
 }
 
+
 window.onload = () => {
+
 
   var page = new Page()
   page.changeTitlePage()
@@ -33,7 +32,6 @@ window.onload = () => {
 
   // Initial data fetch
   getStreamingData()
-
 
   // Interval to get streaming data in milliseconds
   setInterval(() => {
@@ -287,72 +285,48 @@ function Page() {
     }
   }
 
-  this.refreshLyric = (currentSong, currentArtist) => {
+  this.refreshLyric = (lyrics) => {
     // Show lyrics loading
     showLyricsLoading()
 
-    var xhttp = new XMLHttpRequest()
-    xhttp.onreadystatechange = function () {
-      // Hide lyrics loading
+    var openLyric = document.getElementsByClassName("lyrics")[0]
+
+    // Hide lyrics loading
+    setTimeout(() => {
       hideLyricsLoading()
+    }, 500)
 
-      if (this.readyState === 4 && this.status === 200) {
-        var data = JSON.parse(this.responseText)
+    if (lyrics && lyrics.trim() !== "") {
+      // Remove skeleton loading from modal
+      const lyricsLoading = document.querySelector(".lyrics-loading")
+      if (lyricsLoading) lyricsLoading.style.display = "none"
 
-        var openLyric = document.getElementsByClassName("lyrics")[0]
+      const lyricElement = document.getElementById("lyric")
+      if (lyricElement) {
+        lyricElement.innerHTML = lyrics.replace(/\n/g, "<br />")
+      }
 
-        if (data.type === "exact" || data.type === "aprox") {
-          var lyric = data.mus[0].text
+      if (openLyric) {
+        openLyric.style.opacity = "1"
+        openLyric.setAttribute("data-toggle", "modal")
+      }
+    } else {
+      if (openLyric) {
+        openLyric.style.opacity = "0.3"
+        openLyric.removeAttribute("data-toggle")
+      }
 
-          // Remove skeleton loading from modal
-          const lyricsLoading = document.querySelector(".lyrics-loading")
-          if (lyricsLoading) lyricsLoading.style.display = "none"
+      var modalLyric = document.getElementById("modalLyrics")
+      if (modalLyric) {
+        modalLyric.style.display = "none"
+        modalLyric.setAttribute("aria-hidden", "true")
+      }
 
-          const lyricElement = document.getElementById("lyric")
-          if (lyricElement) {
-            lyricElement.innerHTML = lyric.replace(/\n/g, "<br />")
-          }
-
-          if (openLyric) {
-            openLyric.style.opacity = "1"
-            openLyric.setAttribute("data-toggle", "modal")
-          }
-        } else {
-          if (openLyric) {
-            openLyric.style.opacity = "0.3"
-            openLyric.removeAttribute("data-toggle")
-          }
-
-          var modalLyric = document.getElementById("modalLyrics")
-          if (modalLyric) {
-            modalLyric.style.display = "none"
-            modalLyric.setAttribute("aria-hidden", "true")
-          }
-
-          const backdrop = document.getElementsByClassName("modal-backdrop")[0]
-          if (backdrop) {
-            backdrop.remove()
-          }
-        }
-      } else {
-        var lyricsElement = document.getElementsByClassName("lyrics")[0]
-        if (lyricsElement) {
-          lyricsElement.style.opacity = "0.3"
-          lyricsElement.removeAttribute("data-toggle")
-        }
+      const backdrop = document.getElementsByClassName("modal-backdrop")[0]
+      if (backdrop) {
+        backdrop.remove()
       }
     }
-    xhttp.open(
-      "GET",
-      "https://api.vagalume.com.br/search.php?apikey=" +
-        API_KEY +
-        "&art=" +
-        currentArtist +
-        "&mus=" +
-        currentSong.toLowerCase(),
-      true,
-    )
-    xhttp.send()
   }
 }
 
@@ -528,7 +502,7 @@ function getStreamingData() {
           }
 
           // Update lyrics
-          page.refreshLyric(song, artist)
+          page.refreshLyric(data.lyrics || "")
 
           // Update history if available
           if (data.history && data.history.length > 0) {
@@ -717,16 +691,16 @@ function decimalToInt(vol) {
 function initializeHistoryItems() {
   const historyContainer = document.getElementById("historicSong")
   const HISTORY_ITEMS_COUNT = 5
-  
+
   if (historyContainer) {
     // Clear any existing items
     historyContainer.innerHTML = ""
-    
+
     // Generate history items
     for (let i = 0; i < HISTORY_ITEMS_COUNT; i++) {
       const historyItem = document.createElement("article")
       historyItem.className = "history-item"
-      
+
       historyItem.innerHTML = `
         <div class="cover-historic">
           <div class="cover-loading-spinner"></div>
@@ -740,7 +714,7 @@ function initializeHistoryItems() {
           </div>
         </div>
       `
-      
+
       historyContainer.appendChild(historyItem)
     }
   }
