@@ -10,7 +10,7 @@ A modern, responsive web-based radio player with a beautiful interface. Stream y
 - **🎨 Modern UI**: Spotify-inspired interface with smooth animations
 - **📱 Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 - **🎵 Real-time Metadata**: Displays current song, artist, and album artwork
-- **📜 Lyrics Integration**: Automatic lyrics lookup using Vagalume API
+- **📜 Lyrics Integration**: Displays lyrics of the currently playing song.
 - **📚 Playback History**: Shows up to 5 recently played songs
 - **🎛️ Volume Control**: Precise volume control with keyboard shortcuts
 - **⌨️ Keyboard Shortcuts**: Full keyboard navigation support
