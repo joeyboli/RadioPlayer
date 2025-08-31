@@ -67,7 +67,7 @@ Edit `js/script.js` to configure your radio stream:
 
 ```javascript
 const URL_STREAMING = "https://your-stream-url.com/stream"
-const API_URL = "https://prod-api.radioapi.me/metadata/YOUR-API-KEY"
+const API_URL = "https://prod-api.radioapi.me/streamtitile/STREAM_ID"
 ```
 
 ## 🎮 Keyboard Shortcuts
