@@ -104,5 +104,5 @@ This player uses [RadioAPI.me](https://radioapi.me) for metadata and its lyrics.
 
 ## 📄 License
 
-MIT License
+GNU AFFERO GENERAL PUBLIC LICENSE
 
