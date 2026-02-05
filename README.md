@@ -4,10 +4,6 @@ A modern, responsive web-based radio player with a clean Spotify-inspired interf
 
 ![Radio Player Preview](img/imageupdate.png)
 
-## Live Demo
-
-Check out the player in action: [View Demo](https://1ceb9727-3e36-4e64-99e7-f776b50c7f4f.radioplayer.streamafrica.net/)
-
 ## Features
 
 - **Live Streaming** - Support for Icecast, Shoutcast, Zeno, and Radiojar protocols
@@ -77,12 +73,16 @@ Want more features? **JC Player Pro** is available for **$99** and includes:
 
 **Note:** This is a hosted player service with full dashboard and API access. You are purchasing access to the JC Player Pro platform, not the source code.
 
+### Live Demo
+
+Check out the player in action: [View Demo](https://1ceb9727-3e36-4e64-99e7-f776b50c7f4f.radioplayer.streamafrica.net/)
+
 ### Screenshots
 
 ![JC Player Pro Interface](https://ik.imagekit.io/boxradio/Screenshot%202026-02-05%20at%2011.03.32.png)
 ![JC Player Pro Features](https://ik.imagekit.io/boxradio/Screenshot%202026-02-05%20at%2011.03.19.png)
 
-[Get JC Player Pro →](#)
+[Get JC Player Pro →](https://streamafrica.net/player/jcplayer)
 
 ---
 
