@@ -1,103 +1,91 @@
-# HTML5 Full Page Internet Radio Player
+# HTML5 Internet Radio Player
 
-A modern, responsive web-based radio player with a clean interface. Stream your favorite radio station with real-time song information, lyrics, and playback history.
+A modern, responsive web-based radio player with a clean Spotify-inspired interface for streaming internet radio stations.
 
 ![Radio Player Preview](img/imageupdate.png)
 
+## Live Demo
+
+Check out the player in action: [View Demo](https://1ceb9727-3e36-4e64-99e7-f776b50c7f4f.radioplayer.streamafrica.net/)
+
 ## Features
 
-- Live streaming support for multiple protocols (Icecast, Zeno, Shoutcast, Radiojar)
-- Modern Spotify-inspired interface with smooth animations
-- Responsive design for desktop, tablet, and mobile devices
-- Real-time metadata display (song, artist, album artwork)
-- Integrated lyrics display
-- Playback history showing 5 recently played songs
-- Volume control with keyboard shortcuts
-- Full keyboard navigation support
-
-## Supported APIs
-
-Integration with multiple radio streaming APIs through [RadioAPI.me](https://radioapi.me):
-
-- Azuracast API - Open-source radio broadcasting suite
-- Live365 API - Professional internet radio platform
-- RadioKing API - European radio streaming service
-
-## Supported Stream Types
-
-- Icecast - Open-source streaming media server
-- Shoutcast - Nullsoft's streaming media server
-- Zeno - Modern streaming platform
-- Radiojar - Cloud-based radio streaming
-- HTTP/HTTPS Streams - Direct audio stream URLs
-
-## Music Platform Integration
-
-Song information from multiple music platforms:
-
-- iTunes (Apple Music)
-- Spotify
-- YouTube Music
-- Deezer
-- KKBOX
-- Line Music
-- FLOMusic
+- **Live Streaming** - Support for Icecast, Shoutcast, Zeno, and Radiojar protocols
+- **Real-time Metadata** - Display current song, artist, and album artwork
+- **Integrated Lyrics** - View lyrics for the currently playing song
+- **Playback History** - Shows 5 recently played songs
+- **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
+- **Volume Control** - Adjustable volume with keyboard shortcuts
+- **Full Keyboard Navigation** - Complete keyboard support for accessibility
 
 ## Quick Start
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/joeyboli/radioplayer.git
    cd radioplayer
    ```
 
-2. Configure your radio stream:
+2. **Configure your stream:**
    - Open `js/script.js`
-   - Update the `URL_STREAMING` constant with your stream URL
-   - Get your API endpoint from [RadioAPI.me](https://radioapi.me)
+   - Update `URL_STREAMING` with your stream URL
+   - Set `API_URL` with your endpoint from [RadioAPI.me](https://radioapi.me)
 
-3. Open `index.html` in your browser
+3. **Launch:**
+   - Open `index.html` in your browser
 
 ## Configuration
 
-Edit `js/script.js` to configure your radio stream:
+Edit `js/script.js`:
 
 ```javascript
 const URL_STREAMING = "https://your-stream-url.com/stream"
 const API_URL = "https://prod-api.radioapi.me/streamtitile/STREAM_ID"
+const HISTORY_ITEMS_COUNT = 5 // Adjust history length
 ```
 
 ## Keyboard Shortcuts
 
 | Key | Action |
 |-----|--------|
-| Space or P | Play/Pause |
+| Space / P | Play/Pause |
 | ↑ | Volume Up |
 | ↓ | Volume Down |
 | M | Mute/Unmute |
-| 0-9 | Set volume to 0-90% |
-
-## Customization
-
-To change the number of history items displayed, edit the `HISTORY_ITEMS_COUNT` constant in `js/script.js`.
-
-## Browser Support
-
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
+| 0-9 | Set volume (0-90%) |
 
 ## API Integration
 
-This player uses [RadioAPI.me](https://radioapi.me) for metadata and lyrics. Get your API endpoint from their service.
+This player uses [RadioAPI.me](https://radioapi.me) for metadata and lyrics. Supported platforms include:
 
-## Troubleshooting
+- **Broadcasting APIs:** Azuracast, Live365, RadioKing
+- **Stream Types:** Icecast, Shoutcast, Zeno, Radiojar, HTTP/HTTPS
+- **Music Platforms:** iTunes, Spotify, YouTube Music, Deezer, KKBOX, Line Music, FLOMusic
 
-- Check browser console for errors
-- Verify stream URL is accessible
-- Ensure API endpoint is working
+## Upgrade to JC Player Pro
+
+Want more features? **JC Player Pro** is available for **$99** and includes:
+
+- **Multi-Radio Support** - Manage and switch between multiple radio stations
+- **Embeddable Players** - Integrate players into any website
+- **Sticky Players** - Floating players that stay visible while scrolling
+- **Advanced Customization** - Extended theming and branding options
+- **Radio API Dashboard** - Full access to the RadioAPI.me dashboard
+- **API Access** - Complete API integration and support
+- **Priority Support** - Direct technical assistance
+- And much more!
+
+**Note:** This is a hosted player service with full dashboard and API access. You are purchasing access to the JC Player Pro platform, not the source code.
+
+### Screenshots
+
+![JC Player Pro Interface](https://ik.imagekit.io/boxradio/Screenshot%202026-02-05%20at%2011.03.32.png)
+![JC Player Pro Features](https://ik.imagekit.io/boxradio/Screenshot%202026-02-05%20at%2011.03.19.png)
+
+[Get JC Player Pro →](#)
+
+---
 
 ## License
 
-GNU AFFERO GENERAL PUBLIC LICENSE
+GNU Affero General Public License v3.0
