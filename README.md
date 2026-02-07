@@ -37,7 +37,7 @@ Edit `js/script.js`:
 ```javascript
 const URL_STREAMING = "https://your-stream-url.com/stream"
 const API_URL = "https://prod-api.radioapi.me/streamtitile/STREAM_ID"
-const HISTORY_ITEMS_COUNT = 5 // Adjust history length
+const HISTORY_ITEMS_COUNT = 5 // Adjust history length, max 10
 ```
 
 ## Keyboard Shortcuts
