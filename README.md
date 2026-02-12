@@ -60,13 +60,13 @@ This player uses [RadioAPI.me](https://radioapi.me) for metadata and lyrics. Sup
 
 ## Upgrade to JC Player Pro
 
-Want more features? **JC Player Pro** is available for **$99** and includes:
+Want more features? **JC Player Pro** is available for **$79** and includes:
 
 - **Multi-Radio Support** - Manage and switch between multiple radio stations
 - **Embeddable Players** - Integrate players into any website
 - **Sticky Players** - Floating players that stay visible while scrolling
 - **Advanced Customization** - Extended theming and branding options
-- **Radio API Dashboard** - Full access to the RadioAPI.me dashboard
+- **Radio API Dashboard** - Full access to the RadioAPI.me dashboard (add, edit and configure radios, free hosting, custom domains, customisation).
 - **API Access** - Complete API integration and support
 - **Priority Support** - Direct technical assistance
 - And much more!
