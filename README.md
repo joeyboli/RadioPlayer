@@ -1,6 +1,6 @@
 # HTML5 Internet Radio Player
 
-A modern, responsive web-based radio player with a clean Spotify-inspired interface for streaming internet radio stations.
+A modern, responsive web-based radio player with a clean interface for streaming internet radio stations.
 
 ![Radio Player Preview](img/imageupdate.png)
 
@@ -9,10 +9,10 @@ A modern, responsive web-based radio player with a clean Spotify-inspired interf
 - **Live Streaming** - Support for Icecast, Shoutcast, Zeno, and Radiojar protocols
 - **Real-time Metadata** - Display current song, artist, and album artwork
 - **Integrated Lyrics** - View lyrics for the currently playing song
-- **Playback History** - Shows 5 recently played songs
+- **Playback History** - Shows recently played songs
 - **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
-- **Volume Control** - Adjustable volume with keyboard shortcuts
-- **Full Keyboard Navigation** - Complete keyboard support for accessibility
+- **Volume Control** - Adjustable volume slider
+- **Color Theming** - Play button dynamically adopts the artwork's dominant color
 
 ## Quick Start
 
@@ -24,39 +24,51 @@ A modern, responsive web-based radio player with a clean Spotify-inspired interf
 
 2. **Configure your stream:**
    - Open `js/script.js`
-   - Update `URL_STREAMING` with your stream URL
-   - Set `API_URL` with your endpoint from [RadioAPI.me](https://radioapi.me)
+   - Update the `CONFIG` object at the top of the file with your values
 
 3. **Launch:**
-   - Open `index.html` in your browser
+   - Open `index.html` in your browser — no build step required
 
 ## Configuration
 
-Edit `js/script.js`:
+All configurable values live at the top of `js/script.js` in a single `CONFIG` object:
 
 ```javascript
-const URL_STREAMING = "https://your-stream-url.com/stream"
-const API_URL = "https://prod-api.radioapi.me/streamtitile/STREAM_ID"
-const HISTORY_ITEMS_COUNT = 5 // Adjust history length, max 10
+const CONFIG = Object.freeze({
+  // ── Stream ──────────────────────────────────────────────────
+  STREAM_URL:       'https://your-stream-url.com/stream',
+  API_URL:          'https://your-metadata-api.com/endpoint',
+
+  // ── Branding / fallbacks ─────────────────────────────────────
+  STATION_NAME:     'My Radio Station',
+  FALLBACK_TRACK:   'Live Broadcast',
+  FALLBACK_ARTIST:  'My Station',
+  FALLBACK_BITRATE: '128',
+  FALLBACK_FORMAT:  'MP3',
+  FALLBACK_ARTWORK: 'img/cover.png',   // shown before metadata loads
+
+  // ── Player UI labels ─────────────────────────────────────────
+  LABEL_PLAY: 'PLAY',
+  LABEL_STOP: 'STOP',
+
+  // ── Audio ────────────────────────────────────────────────────
+  DEFAULT_VOLUME: 0.8,   // 0.0 – 1.0
+
+  // ── Timings ──────────────────────────────────────────────────
+  META_INTERVAL_MS:     15_000,  // how often to poll metadata
+  PROGRESS_INTERVAL_MS:  1_000,  // progress bar update rate
+  FETCH_TIMEOUT_MS:      8_000,  // API request timeout
+
+  // ── UI behaviour ─────────────────────────────────────────────
+  HISTORY_COMPACT_COUNT:      3,  // tracks shown in the main view
+  COLOR_BRIGHTNESS_THRESHOLD: 125, // YIQ threshold for button text contrast
+
+  // ── Image proxy ───────────────────────────────────────────────
+  IMG_PROXY: 'https://wsrv.nl/',
+});
 ```
 
-## Keyboard Shortcuts
-
-| Key | Action |
-|-----|--------|
-| Space / P | Play/Pause |
-| ↑ | Volume Up |
-| ↓ | Volume Down |
-| M | Mute/Unmute |
-| 0-9 | Set volume (0-90%) |
-
-## API Integration
-
-This player uses [RadioAPI.me](https://radioapi.me) for metadata and lyrics. Supported platforms include:
-
-- **Broadcasting APIs:** Azuracast, Live365, RadioKing
-- **Stream Types:** Icecast, Shoutcast, Zeno, Radiojar, HTTP/HTTPS
-- **Music Platforms:** iTunes, Spotify, YouTube Music, Deezer, KKBOX, Line Music, FLOMusic
+The fallback values (`FALLBACK_TRACK`, `FALLBACK_ARTIST`, etc.) are shown automatically when the metadata API is unavailable or returns empty fields.
 
 ## Upgrade to JC Player Pro
 
@@ -66,7 +78,7 @@ Want more features? **JC Player Pro** is available for **$79** and includes:
 - **Embeddable Players** - Integrate players into any website
 - **Sticky Players** - Floating players that stay visible while scrolling
 - **Advanced Customization** - Extended theming and branding options
-- **Radio API Dashboard** - Full access to the RadioAPI.me dashboard (add, edit and configure radios, free hosting, custom domains, customisation).
+- **Radio API Dashboard** - Full access to add, edit and configure radios, free hosting, custom domains
 - **API Access** - Complete API integration and support
 - **Priority Support** - Direct technical assistance
 - And much more!
@@ -83,6 +95,15 @@ Check out the player in action: [View Demo](https://1ceb9727-3e36-4e64-99e7-f776
 ![JC Player Pro Features](https://ik.imagekit.io/boxradio/Screenshot%202026-02-05%20at%2011.03.19.png)
 
 [Get JC Player Pro →](https://streamafrica.net/player/jcplayer)
+
+---
+
+## Support & Contact
+
+For questions, customisation requests, or integration help:
+
+- **WhatsApp:** [Chat with us](https://wa.link/yn9zpy)
+- **Email:** [bankuboy@proton.me](mailto:bankuboy@proton.me)
 
 ---
 

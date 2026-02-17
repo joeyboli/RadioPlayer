@@ -1,136 +1,122 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>RadioPlayer</title>
 
-    <link rel="icon" type="image/png" href="img/cover.png" />
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css?v2322">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="cover-site">
-        <div id="bgCover"></div>
-        <div class="bg-mask"></div>
-    </div>
-    
-    <main>
-        <section id="player">
-            <div class="container">
-                <!-- Spotify-style Player Interface -->
-                <div class="player-interface">
-                    <!-- Left Side: Artwork -->
-                    <div class="player-left">
-                        <div class="main-artwork">
-                            <div id="currentCoverArt" class="loading-artwork-main">
-                                <div class="artwork-loading-spinner"></div>
-                            </div>
-                            <div class="watermark"></div>
-                        </div>
-                    </div>
-                    
-                    <!-- Right Side: Song Info and Controls -->
-                    <div class="player-right">
-                        <!-- Song Information -->
-                        <div class="song-info">
-                            <h2 id="currentSong" class="current-song">
-                                <span class="song-skeleton">Loading...</span>
-                            </h2>
-                            <h3 id="currentArtist" class="current-artist">
-                                <span class="artist-skeleton">Loading artist...</span>
-                            </h3>
-                        </div>
-                        
-                        <!-- Player Controls -->
-                        <div class="player-controls">
-                            <button class="btn-play" onclick="togglePlay()">
-                                <i id="playerButton" class="fa fa-play"></i>
-                                <span id="buttonPlay">PLAY</span>
-                                <div class="btn-loading-spinner"></div>
-                            </button>
-                            
-                            <div class="volume-control">
-                                <div class="volume-icon">
-                                    <i class="fa fa-volume-up"></i>
-                                </div>
-                                <div class="volume-slide">
-                                    <input type="range" id="volume" step="1" min="0" max="100" value="80">
-                                </div>
-                                <div class="volume-indicator">
-                                    <span id="volIndicator">80</span>%
-                                </div>
-                            </div>
-                            
-                            <div class="action-buttons">
-                                <button class="btn-secondary" data-toggle="modal" data-target="#modalHistory">
-                                    <i class="fa fa-history"></i>
-                                    HISTORY
-                                </button>
-                                <a href="#" class="btn-secondary lyrics" data-target="#modalLyrics">
-                                    <i class="fa fa-file-text-o"></i>
-                                    LYRICS
-                                    <div class="lyrics-loading-dot"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Lyrics Modal -->
-    <div class="modal fade" id="modalLyrics" tabindex="-1" role="dialog" aria-labelledby="lyricsSong" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="lyricsSong">Lyrics</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" id="lyric">
-                    <div class="lyrics-loading">
-                        <div class="lyrics-skeleton-line"></div>
-                        <div class="lyrics-skeleton-line"></div>
-                        <div class="lyrics-skeleton-line short"></div>
-                        <div class="lyrics-skeleton-line"></div>
-                        <div class="lyrics-skeleton-line short"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- History Modal -->
-    <div class="modal fade" id="modalHistory" tabindex="-1" role="dialog" aria-labelledby="historyTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="historyTitle">Recently Played</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="history-list" id="historicSong">
-                        <!-- History items will be generated dynamically -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js?3892920001992"></script>
-    
-</body>
+<body class="flex flex-col h-screen max-h-screen">
 
+<div id="blur-bg" class="overlay-blur" onclick="closeAllPanels()"></div>
+
+<!-- NAVIGATION -->
+<nav class="h-16 border-b border-zinc-900 px-4 md:px-8 flex justify-between items-center bg-black z-50">
+    <div class="flex items-center gap-4">
+        <h1 class="font-black text-lg tracking-tighter uppercase italic text-zinc-200">
+            Radio<span class="text-orange-500">Player</span>
+        </h1>
+    </div>
+    <div class="hidden sm:block mono text-[10px] text-orange-500 font-bold uppercase tracking-widest">
+        <span id="clock">00:00:00</span> // SYSTEM_LIVE
+    </div>
+</nav>
+
+<!-- LYRICS PANEL -->
+<aside id="lyrics-panel" class="flex flex-col">
+    <div class="p-6 border-b border-zinc-900 flex justify-between items-center">
+        <h3 class="font-black text-xl uppercase italic">Lyrics</span></h3>
+        <button onclick="closeAllPanels()" class="mono text-xs text-zinc-500 border border-zinc-800 px-4 py-2 hover:bg-zinc-900">CLOSE</button>
+    </div>
+    <div id="lyrics-body" class="flex-1 overflow-y-auto p-8 mono text-sm leading-relaxed lyrics-content text-zinc-400"></div>
+</aside>
+
+<!-- LOGBOOK PANEL -->
+<aside id="history-panel" class="flex flex-col">
+    <div class="p-6 border-b border-zinc-900 flex justify-between items-center text-orange-500">
+        <h3 class="font-black text-xl uppercase italic tracking-tight">LogBook</h3>
+        <button onclick="closeAllPanels()" class="mono text-xs text-zinc-500 border border-zinc-800 px-4 py-2 hover:bg-zinc-900">CLOSE</button>
+    </div>
+    <div id="full-history-list" class="flex-1 overflow-y-auto p-6 space-y-6 bg-black/20"></div>
+</aside>
+
+<!-- MAIN CONTENT -->
+<main class="flex-1 overflow-y-auto bg-black p-4 md:p-8 lg:p-12">
+    <div class="max-w-5xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-16">
+
+        <!-- LEFT: ARTWORK MONITOR -->
+        <div class="lg:col-span-5 w-full max-w-[440px] lg:max-w-none mx-auto lg:mx-0">
+            <div class="aspect-square bg-zinc-900 border border-zinc-800 relative overflow-hidden group shadow-2xl">
+                <img id="main-artwork" class="w-full h-full object-cover" alt="Album artwork">
+
+                <div class="absolute bottom-3 left-3 bg-black/90 px-3 py-1.5 mono text-[9px] text-zinc-300 uppercase tracking-widest border border-white/10 flex gap-3 divide-x divide-zinc-700">
+                    <div class="flex gap-1.5"><span class="text-zinc-500">BIT:</span><span id="art-bitrate">---</span></div>
+                    <div class="pl-3 flex gap-1.5"><span class="text-zinc-500">FMT:</span><span id="art-format">---</span></div>
+                    <div class="pl-3 flex gap-1.5"><span class="text-zinc-500">YEAR:</span><span id="art-year">----</span></div>
+                </div>
+            </div>
+
+            <div class="mt-4 relative overflow-hidden h-20 bg-white group">
+                <div id="progress-shadow" class="absolute top-0 left-0 bottom-0 w-0 z-0 border-r border-black/5"></div>
+                <button onclick="togglePlayback()" id="master-play-btn" class="relative z-10 w-full h-full px-8 flex items-center justify-between text-black transition-colors duration-500">
+                    <div class="flex items-center gap-5 text-left">
+                        <div class="w-8 h-8"><svg id="play-icon" class="w-full h-full fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        <div class="flex flex-col leading-none">
+                            <span id="play-text" class="font-black uppercase italic tracking-tighter text-2xl md:text-3xl">PLAY</span>
+                            <span id="progress-text" class="mono text-[9px] uppercase tracking-[0.2em] mt-1 opacity-60">MASTER CONTROL</span>
+                        </div>
+                    </div>
+                    <div id="visualizer" class="flex items-end gap-1.5">
+                        <div class="v-bar h-2"></div><div class="v-bar h-2"></div><div class="v-bar h-2"></div><div class="v-bar h-2"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- RIGHT: INFO & LOG -->
+        <div class="lg:col-span-7">
+            <div class="mb-12">
+                <div id="metadata-loader" class="mono text-[9px] text-orange-500 mb-2 hidden tracking-widest animate-pulse font-bold uppercase">POLLING...</div>
+                <h2 class="mono text-[11px] uppercase tracking-[0.4em] text-zinc-500 mb-6 block border-l-2 border-orange-500 pl-4">Radio</h2>
+                <h1 id="track-name" class="text-3xl md:text-4xl lg:text-5xl font-black tracking-tighter uppercase leading-[0.9] mb-4 italic line-clamp-3">CONNECTING</h1>
+                <p id="artist-name" class="text-xl md:text-2xl font-bold text-zinc-400 line-clamp-2 uppercase">Hardware Interface</p>
+            </div>
+
+            <div id="history-container" class="border-t border-zinc-900 pt-10">
+                <div class="flex justify-between items-end mb-6">
+                    <h3 class="mono text-[10px] text-zinc-700 uppercase tracking-[0.5em]">Log Sequence</h3>
+                    <div class="flex gap-4">
+                        <button id="btn-lyrics-toggle" onclick="openLyrics()" class="hidden mono text-[10px] text-zinc-400 uppercase font-bold hover:text-orange-500 transition-colors">[ LYRICS ]</button>
+                        <button onclick="openHistory()" class="mono text-[10px] text-orange-500 uppercase font-bold hover:text-white transition-colors">[ HISTORY ]</button>
+                    </div>
+                </div>
+                <div id="history-list" class="space-y-4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="h-32 lg:hidden"></div>
+</main>
+
+<footer class="h-20 border-t border-zinc-900 bg-[#050505] px-4 md:px-8 flex items-center justify-between z-50 shrink-0">
+    <div class="flex items-center gap-4 w-1/3">
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.8" aria-label="Volume" class="hidden md:block w-24 h-1 bg-zinc-800 appearance-none cursor-pointer accent-orange-500">
+    </div>
+    <div class="flex-1 flex flex-col items-center justify-center min-w-0 px-4">
+        <div class="flex items-center gap-3 max-w-full">
+            <span id="live-dot" class="w-2.5 h-2.5 rounded-full bg-zinc-800"></span>
+            <span id="footer-station-name" class="mono text-[11px] text-zinc-400 uppercase tracking-widest truncate font-bold italic">Afrofusion Rap</span>
+        </div>
+    </div>
+    <div class="w-1/3 text-right">
+        <span class="mono text-[9px] text-zinc-700 uppercase tracking-tighter">2025 RadioPlayer</span>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
 </html>
