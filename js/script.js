@@ -1,9 +1,7 @@
 const CONFIG = Object.freeze({
-  // ── Stream ──────────────────────────────────────────────────────────
   STREAM_URL:       'https://play.streamafrica.net/rap',
   API_URL:          'https://api.streamafrica.net/metadata/92f09a6d-37f1-4c10-bf2a-018bf03136fc',
 
-  // ── Branding / fallbacks ─────────────────────────────────────────────────────
   STATION_NAME:     'RAP',
   FALLBACK_TRACK:   'Live Broadcast',
   FALLBACK_ARTIST:  'RAP',
@@ -11,23 +9,18 @@ const CONFIG = Object.freeze({
   FALLBACK_FORMAT:  'MP3',
   FALLBACK_ARTWORK: 'https://ik.imagekit.io/boxradio/r2/radios/01KGQFV8ZWSG9BJFVSW9TWHKFW.png',
 
-  // ── Player UI labels ───────────────────────────────────────────────────────────────
   LABEL_PLAY:       'PLAY',
   LABEL_STOP:       'STOP',
 
-  // ── Audio ────────────────────────────────────────────────────────────────────
   DEFAULT_VOLUME:   0.8,   // 0.0 – 1.0
 
-  // ── Timings ──────────────────────────────────────────────────────────────────
   META_INTERVAL_MS:     15_000,
   PROGRESS_INTERVAL_MS:  1_000,
   FETCH_TIMEOUT_MS:      8_000,
 
-  // ── UI behaviour ─────────────────────────────────────────────────────────────
   HISTORY_COMPACT_COUNT: 3,    // tracks shown in the main view
   COLOR_BRIGHTNESS_THRESHOLD: 125, // YIQ threshold for btn text contrast
 
-  // ── Image proxy ─────────────────────────────────────────────────────────────────
   IMG_PROXY: 'https://wsrv.nl/',
 });
 
