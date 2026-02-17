@@ -18,7 +18,7 @@ const CONFIG = Object.freeze({
   PROGRESS_INTERVAL_MS:  1_000,
   FETCH_TIMEOUT_MS:      8_000,
 
-  HISTORY_COMPACT_COUNT: 3,    // tracks shown in the main view
+  HISTORY_COMPACT_COUNT: 5,    // tracks shown in the main view
   COLOR_BRIGHTNESS_THRESHOLD: 125, // YIQ threshold for btn text contrast
 
   IMG_PROXY: 'https://wsrv.nl/',
