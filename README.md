@@ -24,7 +24,7 @@ A high-tech, immersive web-based radio player designed with a "Cyber-Retro" aest
 
 2. **Configure your stream:**
    Open `js/script.js` and update the `CONFIG` object at the top.
-   - To generate a free API URL, sign up at [mad.radioapi.me](https://mad.radioapi.me/).
+   - To generate a free API URL, sign up at [radioapi.me](https://radioapi.me/).
    - Generate your unique API URL from their dashboard.
    - Paste it into the `API_URL` field in the `CONFIG`.
    - Update `STREAM_URL` with your actual radio stream.
