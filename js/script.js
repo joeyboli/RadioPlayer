@@ -1,6 +1,6 @@
 let CONFIG = {
     STREAM_URL: 'https://play.streamafrica.net/rap',
-    API_URL: 'https://openapi.streamafrica.cloud/metadata/7bb67d3b-c85f-4dae-8116-824a9c0a2425',
+    API_URL: 'https://public.radioapi.me/station/c09b5c85-f42c-4725-8118-685e63864662/nowplaying',
 
     STATION_NAME: 'RAP GLOBAL',
     STATION_LOGO: 'https://ik.imagekit.io/boxradio/r2/radios/01KGQFV8ZWSG9BJFVSW9TWHKFW.png',            // URL to a logo image (optional)
